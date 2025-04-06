@@ -157,6 +157,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhuoying-04.github/2025/04/05/%E8%BE%B0%E6%9B%A6%E5%8C%BB%E7%96%97%E5%B9%B3%E5%8F%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rose.jpg">
+      <meta itemprop="name" content="April">
+      <meta itemprop="description" content="Do not go gentle into that good night">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="April's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/05/%E8%BE%B0%E6%9B%A6%E5%8C%BB%E7%96%97%E5%B9%B3%E5%8F%B0/" class="post-title-link" itemprop="url">辰曦医疗平台</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-05 19:31:49" itemprop="dateCreated datePublished" datetime="2025-04-05T19:31:49+08:00">2025-04-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhuoying-04.github/2025/04/05/java%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -182,7 +239,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-04-05 16:46:19 / 修改时间：16:50:37" itemprop="dateCreated datePublished" datetime="2025-04-05T16:46:19+08:00">2025-04-05</time>
+              <time title="创建时间：2025-04-05 16:46:19 / 修改时间：23:15:34" itemprop="dateCreated datePublished" datetime="2025-04-05T16:46:19+08:00">2025-04-05</time>
             </span>
 
           
@@ -196,7 +253,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2>
+          <h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><h3 id="java的特点是什么？"><a href="#java的特点是什么？" class="headerlink" title="java的特点是什么？"></a>java的特点是什么？</h3><ul>
+<li><p>平台无关性：java程序一次编写，处处运行，主要就是通过JVM实现的，java编译器将java程序编译为字节码.class文件，该字节码文件可以在任何安装了JVM的系统上运行。</p>
+<p>  字节码文件的结构</p>
+<ol>
+<li><strong>魔数</strong>：每个 <code>.class</code> 文件开头都有一个魔数 <code>0xCAFEBABE</code>，这是一个固定的标识符，用来标识这个文件是一个有效的 <code>.class</code> 文件。</li>
+<li><strong>版本信息</strong>：紧接着魔数后面是 Java 字节码的版本信息，指定该字节码文件的兼容 Java 版本。</li>
+<li><strong>常量池</strong>：常量池包含了类、字段、方法、字符串等信息的引用。它是字节码文件中非常重要的一部分，JVM 在执行过程中会通过常量池来访问这些常量。</li>
+<li><strong>类信息</strong>：包括类的访问标志、类的名字、继承关系、实现的接口等信息。</li>
+<li><strong>字段和方法信息</strong>：包含类的字段（变量）和方法的签名，字段的类型、访问修饰符、方法的名称和参数等。</li>
+<li><strong>字节码指令</strong>：类的实际执行代码。每个方法都会包含一组字节码指令，这些指令是由 JVM 解释并执行的。</li>
+</ol>
+</li>
+<li><p>面向对象：java认为万物皆是对象，面向对象特性使得代码易于维护和重用，包括类，对象，继承，多态，抽象和封装。</p>
+</li>
+<li><p>内存管理：java有自己的内存回收机制（JVM垃圾回收章节）</p>
+</li>
+</ul>
+<h3 id="java的优势劣势"><a href="#java的优势劣势" class="headerlink" title="java的优势劣势"></a>java的优势劣势</h3><p>​	<strong>java的优势：</strong>跨平台+面向对象+自动垃圾回收+多线程支持+安全模型</p>
+<p>​	<strong>java的劣势：</strong>性能差，内存消耗严重，因为JVM本身就占内存，语法繁琐，面向对象过于严格</p>
+<h3 id="java为什么是跨平台的"><a href="#java为什么是跨平台的" class="headerlink" title="java为什么是跨平台的"></a>java为什么是跨平台的</h3><p>java支持跨平台，主要依赖于JVM关系比较大。JVM是一个用C++&#x2F;C编写的软件，它可以将字节码文件翻译成特定平台下的机器码然后运行。也就是说，只要在不同的平台上安装对应版本的虚拟机，就可以运行字节码文件，运行我们编写的java程序。</p>
+<p>而这个过程中，java编写的程序没有做任何改变，仅仅是通过JVM这一中间件，就可以运行字节码文件，运行我们编译好的java程序。</p>
+<h3 id="JVM、JDK、JRE的关系"><a href="#JVM、JDK、JRE的关系" class="headerlink" title="JVM、JDK、JRE的关系"></a>JVM、JDK、JRE的关系</h3><ol>
+<li>JVM是虚拟机，是java程序运行的环境，它负责将java字节码解释或者编译为机器码，并执行程序。JVM提供了内存管理、垃圾回收、安全性等功能，使得java程序具备跨平台性</li>
+<li>JRE是java运行时所需最小的环境，它包含JVM和一组java类库，用于支持java程序的执行。JRE不包括开发工具。</li>
+<li>JDK是java开发工具包，是开发java程序所需工具集合，它包含JVM，编译器，调试器等开发工具。同时还包括一系列类库。JDK提供了开发，编译，调试和运行java程序所需的全部工具和环境。</li>
+</ol>
+<h3 id="编译型语言和解释型语言的区别"><a href="#编译型语言和解释型语言的区别" class="headerlink" title="编译型语言和解释型语言的区别"></a>编译型语言和解释型语言的区别</h3><ol>
+<li>编译型语言：在程序执行前，整个源代码会被编译成机器码或者字节码，生成可执行文件。执行时直接执行编译后的代码，速度快，但是跨平台性较差。如C,C++。</li>
+<li>解释型语言：在程序执行时，逐行解释执行源代码，不生成独立的可执行文件。通常由解释器动态解释并且执行代码，跨平台性比较好，但执行速度相对较慢。如python，javascript。</li>
+</ol>
+<h3 id="为什么java解释和编译都有"><a href="#为什么java解释和编译都有" class="headerlink" title="为什么java解释和编译都有"></a>为什么java解释和编译都有</h3>
       
     </div>
 
@@ -279,7 +366,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
